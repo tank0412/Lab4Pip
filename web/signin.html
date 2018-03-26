@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ПИП 4</title>
+    <script>
+        window.onload = function () {
+            let info = document.URL+"";
+            if (info.indexOf("error")+1){
+                alert("Логин или пароль не верны");
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="loginPageWrapper">
+    <header id="loginHeader">
+        <h3>Выполнил: Бухтиаров Роман</h3>
+        <h3>Группа P3218</h3>
+    </header>
+    <div style=" width: 300px " class="content">
+        <form method="POST" action="rest/user/signin">
+            <h4>Авторизация</h4><br/>
+            <input type="text" id="login" placeholder="Логин" name="login"/> <br/>
+            <input type="password" id="password" placeholder="Пароль" name="password"/> <br/>
+            <button type="submit" id="button">Войти</button><br/>
+            <a href="signup.html">Регистрация</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
